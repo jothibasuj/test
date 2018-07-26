@@ -8,6 +8,15 @@ git reset --hard 4f87f48897e13029c7826babf761ad44fe65abfc
 
 # Resets index to former commit; replace '56e05fced' with your commit code
 git reset 56e05fced 
+
+
 # Moves pointer back to previous HEAD
 git reset --soft HEAD@{1}
 git commit -m "Revert to 56e05fced"
+
+#Hide permission changed files from git status
+git config core.fileMode false
+
+
+
+ref - https://stackoverflow.com/questions/4114095/how-to-revert-a-git-repository-to-a-previous-commit

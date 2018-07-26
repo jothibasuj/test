@@ -4,13 +4,13 @@ print "welcome to git comment learning"
 # Don't do it if you have uncommitted work you want to keep.
 git reset --hard 4f87f48897e13029c7826babf761ad44fe65abfc
 
+# consider modify files no need to add with green color staus .
+git reset --soft 4f87f48897e13029c7826babf761ad44fe65abfc
 
+# consider new files need to add with red color status.
+git reset 4f87f48897e13029c7826babf761ad44fe65abfc
 
-# Resets index to former commit; replace '56e05fced' with your commit code
-git reset 56e05fced 
-
-
-# Moves pointer back to previous HEAD
+ # Moves pointer back to previous HEAD
 git reset --soft HEAD@{1}
 git commit -m "Revert to 56e05fced"
 
